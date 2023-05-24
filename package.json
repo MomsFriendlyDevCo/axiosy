@@ -36,7 +36,8 @@
   "dependencies": {
     "@momsfriendlydevco/debug": "^1.3.0",
     "axios": "^0.27.2",
-    "retry-axios": "^3.0.0"
+    "retry-axios": "^3.0.0",
+    "temp": "^0.9.4"
   },
   "devDependencies": {
     "chai": "^4.3.7",
