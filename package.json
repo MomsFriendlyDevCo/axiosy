@@ -1,6 +1,6 @@
 {
   "name": "@momsfriendlydevco/axiosy",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Axios with auto-retry, logging and sensible error reporting",
   "main": "lib/axios.js",
   "scripts": {
