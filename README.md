@@ -5,7 +5,7 @@ A simple wrapper around Axios which adds some additional features:
 * Auto-retry on all outgoing requests - configure further by setting [raxConfig](https://github.com/JustinBeckwith/retry-axios#usage)
 * Simple logging for outgoing, retry and errored requests via [@MomsFriendlyDevCo/Debug](https://github.com/MomsFriendlyDevCo/Debug)
 * New error reporting class `AxiosError` which includes (sane) error reporting + doesn't spew a giant recursive object to the console if you just log it
-* Log request / response to disk with a simple boolean
+* Log request / response to disk with a simple boolean (also adjustable via environment variable `DEBUG=axiosy`)
 
 
 Usage
@@ -54,6 +54,7 @@ let myAxios = inject(axios.create()); // Add to instanced object
 // myAxios is now a private, injected version of Axios
 ```
 
+
 API
 ===
 This library follows the default Axios [Request](https://axios-http.com/docs/req_config) schema and returns the default Axios [Response](https://axios-http.com/docs/res_schema) except for the following additions.
@@ -68,6 +69,9 @@ If truhty (but not an object), will default to the following options:
 |------------|-----------|---------|--------------------------|
 | `request`  | `Boolean` | `true`  | Log requests to console  |
 | `response` | `Boolean` | `false` | Log responses to console |
+
+
+NOTE: Setting the environment variable `DEBUG=axiosy` enables both of the above for anything using the library.
 
 
 
