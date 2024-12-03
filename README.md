@@ -86,6 +86,7 @@ This can be a simple `true` to enable both behaiours (which uses all defaults) o
 | `requestPath`    | `Function` |         | Where to store the request, called as `(request)`. Default is to store in OS temp directory + some request details   |
 | `requestFormat`  | `Function` |         | Mutate the incoming raw AxiosRequest before saving. Called as `(AxiosRequest)`                                       |
 | `response`       | `Boolean`  | `true`  | Write the response to disk                                                                                           |
+| `responseStack`  | `Boolean`  | `true`  | Omit response line if no other request has occured since                                                             |
 | `responsePath`   | `Function` |         | Where to store the response, called as `(response)`. Default is to store in OS temp directory + some request details |
 | `responseFormat` | `Function` |         | Mutate the incoming raw AxiosResponse before saving. Called as `(AxiosResponse)`                                     |
 | `formatter`      | `Function` |         | Geneal JSON to string formatter, defaults to tabbed output                                                           |
